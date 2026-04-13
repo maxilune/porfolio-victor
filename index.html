@@ -1,10 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mon site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | [Ton Nom]</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+
+        /* En-tête */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* Bouton de téléchargement */
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        .cv-item {
+            margin-bottom: 15px;
+        }
+
+        .date {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
-    <h1>Test</h1>
-    <p>Test</p>
+
+    <header>
+        <h1>[Ton Prénom] [Ton Nom]</h1>
+        <p>Développeur web / Designer / Étudiant</p>
+    </header>
+
+    <section id="presentation">
+        <h2>Présentation</h2>
+        <p>Bienvenue sur mon site ! Passionné par [ton domaine], j'aime créer des solutions simples et élégantes. Je suis actuellement à la recherche de nouvelles opportunités en [ton secteur].</p>
+    </section>
+
+    <section id="cv">
+        <h2>Mon Parcours (CV)</h2>
+        <div class="cv-item">
+            <span class="date">2023 - Présent</span>
+            <p><strong>Poste actuel</strong> - Nom de l'entreprise/école</p>
+        </div>
+        <div class="cv-item">
+            <span class="date">2021 - 2023</span>
+            <p><strong>Formation / Diplôme</strong> - Université de [Ville]</p>
+        </div>
+    </section>
+
+    <section id="portfolio" style="text-align: center;">
+        <h2>Portfolio</h2>
+        <p>Découvrez l'ensemble de mes projets détaillés en téléchargeant mon portfolio complet.</p>
+        <br>
+        <a href="#" class="btn">⬇ Télécharger mon Portfolio (PDF)</a>
+    </section>
+
 </body>
 </html>
